@@ -1,0 +1,93 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+
+:root {
+        --LightCyan: hsl(193, 38%, 86%);
+        --NeonGreen: hsl(150, 100%, 66%);
+        --GrayishBlue: hsl(217, 19%, 38%);
+        --DarkGrayishBlue: hsl(217, 19%, 24%);
+        --DarkBlue: hsl(218, 23%, 16%);
+
+}
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+}
+
+body {
+        font-family: "Manrope", sans-serif;
+        font-size: 62.5%;
+        background-color: var(--DarkBlue);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.container {
+        height: 100%;
+        padding: 10px;
+}
+
+#card {
+        text-align: center;
+        width: 100%;
+        max-width: 22rem;
+        border-radius: 0.8rem;
+        background-color: var(--DarkGrayishBlue);
+}
+
+.adviceNum {
+        padding-top: 1.5rem;
+        font-size: .8rem;
+        color: var(--NeonGreen);
+}
+
+#advice {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--LightCyan);
+}
+
+.divider {
+        width: 100%;
+        padding: 0.3rem 2rem;
+}
+
+.diceWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+}
+
+#diceDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: hsl(150, 100%, 66%);
+        position: relative;
+        top: 25px;
+        cursor: pointer
+}
+
+#diceDiv:hover {
+        box-shadow: 0 0.2rem 1rem 0 hsl(150, 100%, 66%);
+}
+
+.attribution {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 30px;
+}
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
